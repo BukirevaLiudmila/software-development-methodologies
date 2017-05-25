@@ -4,12 +4,7 @@
     font-size: 22px;
 }
 
-span {
-    color: #586e75;
-    font-size: 18px;
-}
-
-/*  РАЗМЕР ЭКРАНА */
+/*  SCREEN */
 .screen {
     cursor: default;
     height: 950px;
@@ -23,7 +18,7 @@ span {
     }
 }
 
-/* ПЕРЕКЛЮЧАТЕЛИ ЭКРАНОВ */
+/* NAVIGATION */
 .circle {
     padding: 0px 0px 20px 0px;
 }
@@ -45,128 +40,17 @@ span {
     }
 }
 
-/* ОТСТУПЫ */
-form > div.row {
-    padding-bottom: 8px;
-}
 
-.padding-left-sm {
-    padding: 0px 0px 0px 5px;
-}
 
-.padding-right-sm {
-    padding: 0px 5px 0px 0px;
-}
-
-.padding-top-lg {
-    padding-top: 200px;
-}
-
-.padding-top-sm {
-    padding-top: 50px;
-}
-
-/*  ОФОРМЛЕНИЕ ФОНА */
-.bg-echeveria {
-    background-color: #fdf6e3;
-    background-image: url('../images/echeveria.png');
-    background-size: cover;
-}
-
-@media (max-width: 1440px) {
-    .bg-echeveria {
-        background-image: url('../images/echeveria-sm.png');
-    }
-}
-
-.bg-green {
-    background-color: #71b783;
-}
-
-.bg-lilac {
-    background-color: #6c71c4;
-}
-
-.bg-mint {
-    background-color: #c9dcce;
-}
-
-.bg-silver {
-    background-color: #dadada;
-}
-
-.bg-triangles {
-    background-color: #586e75;
-    background-image: url('../images/triangles.png');
-}
-
-@media (max-width: 1440px) {
-    .bg-triangles {
-        background-image: url('../images/triangles-sm.png');
-    }
-}
-
-.bg-white {
+/* MAIN */
+.main-container {
     background-color: #f3f3f3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
 }
 
-/*  ОФОРМЛЕНИЕ ТЕКСТА */
-.align-year {
-    text-align: right;
-}
-
-.color-gray {
-    color: #586e75;
-}
-
-.color-lilac {
-    color: #6c71c4;
-}
-
-.color-pearl {
-    color: #fdf6e3;
-}
-
-/*  ОФОРМЛЕНИЕ КНОПОК */
-.my-btn {
-    border: none;
-    cursor: pointer;
-    font-family: 'Roboto Mono', monospace;
-    font-size: 17px;
-    padding-left: 30px;
-    padding-right: 30px;
-}
-
-.my-btn:hover {
-    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
-}
-
-button.my-btn.bg-white:hover {
-    background-color: #6368b4;
-    color: #f3f3f3;
-}
-
-button.my-btn.bg-lilac:hover {
-    background-color: #f3f3f3;
-    color: #6c71c4;
-}
-
-/*  ОФОРМЛЕНИЕ ССЫЛОК */
-a:link {
-    font-size: 18px;
-    color: #586e75;
-    text-decoration: none;
-}
-
-a:hover {
-    color: #6c71c4;
-}
-
-a:active {
-    font-weight: bold;
-}
-
-/*-------------------- ПРИВЕТСТВИЕ --------------------*/
 .arrow {
     padding-top: 20px;
 }
@@ -177,15 +61,6 @@ a:active {
     }
 }
 
-/*  ОФОРМЛЕНИЕ ТЕКСТА */
-.greeting {
-    color: #f3f3f3;
-    font-size: 22px;
-    padding-top: 150px;
-    padding-bottom: 100px;
-    text-align: center;
-}
-
 @media (max-width: 1440px) {
     .greeting {
         padding-top: 100px;
@@ -193,7 +68,7 @@ a:active {
     }
 }
 
-/* ЭФФЕКТ Hang ДЛЯ СТРЕЛКИ */
+/* hang effect for arrow */
 @-webkit-keyframes hvr-hang {
     0% {
         -webkit-transform: translateY(8px);
@@ -257,180 +132,6 @@ a:active {
     animation-fill-mode: forwards;
     -webkit-animation-direction: normal, alternate;
     animation-direction: normal, alternate;
-}
-
-/*-------------------- НАВЫКИ --------------------*/
-/*  ОТСТУПЫ */
-.container:first-child {
-    padding-top: 150px;
-}
-
-@media (max-width: 1440px) {
-    .container {
-        width: 60%;
-    }
-    .container:first-child {
-        padding-top: 100px;
-    }
-}
-
-/* ПОЛОСЫ НАВЫКОВ */
-.progress-bar {
-    -webkit-transition-duration: 2s;
-    -o-transition-duration: 2s;
-    -moz-transition-duration: 2s;
-    transition-duration: 2s;
-}
-
-.progress-font {
-    font-size: 19px;
-    font-weight: 300;
-}
-
-/*-------------------- ОБРАЗОВАНИЕ --------------------*/
-/* ОФОРМЛЕНИЕ ТЕКСТА */
-.education {
-    font-size: 20px;
-    font-weight: 300;
-    padding-top: 200px;
-}
-
-/*-------------------- ПОРТФОЛИО --------------------*/
-/* ОФОРМЛЕНИЕ РАБОТ */
-.portfolio-element {
-    cursor: pointer;
-    padding: 0 3vw;
-}
-.portfolio-element:hover div:first-child{
-    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
-}
-
-.portfolio-element:hover div:last-child {
-    font-weight: 400;
-}
-
-/* ИЗОБРАЖЕНИЯ РАБОТ */
-.portfolio-element div:first-child {
-    border-radius: 12px;
-}
-
-.portfolio-element div img {
-    height: 267px;
-    width: 267px;
-}
-
-/* ОФОРМЛЕНИЕ ТЕКСТА */
-.portfolio-element div:last-child {
-    font-size: 19px;
-    font-weight: 300;
-    text-align: center;
-    padding-top: 5px;
-}
-
-/*-------------------- ПОЧЕМУ Я? --------------------*/
-/*  СЛАЙДЕР  */
-.slider {
-    outline: 8px dashed #fdf6e3;
-    -webkit-transition: .7s ease-in-out;
-    -moz-transition: .7s ease-in-out;
-    -o-transition: .7s ease-in-out;
-    transition: .7s ease-in-out;
- }
-
-.slider:hover {
-    outline-offset: 30px;
-}
-
-.slider-frame {
-    padding: 60px;
-}
-
-aside[id="slidr-id-control"] .slidr-control.down, aside[id="slidr-id-control"] .slidr-control.up {
-    display: none;
-}
-
-aside[id="slidr-id-control"] .slidr-control.left {
-    left: 20px !important;
-}
-
-aside[id="slidr-id-control"] .slidr-control.right {
-    right: 20px !important;
-}
-
-/*-------------------- КОНТАКТЫ --------------------*/
-/*  ОФОРМЛЕНИЕ ФОРМЫ ДЛЯ СВЯЗИ */
-.form-element {
-    border: none;
-    border-radius: 5px;
-    background-color: #586e75;
-    font-family: 'Roboto Mono', monospace;
-    font-weight: 300;
-    font-size: 16px;
-    opacity: 0.4;
-    padding: 8px 0px 8px 10px;
-    width: inherit;
-}
-
-/* ОФОРМЛЕНИЕ ТЕКСТОВОГО ПОЛЯ */
-.textarea {
-    min-width: 500px;
-    outline: none;
-    overflow: auto;
-    resize: none;
-    padding-top: 5px;
-}
-
-/* РЕАКЦИЯ НА ОТПРАВКУ СООБЩЕНИЯ */
-#reactionOnSending {
-    border-radius: 5px;
-    font-family: 'Roboto Mono', monospace;
-    font-weight: 400;
-    font-size: 17px;
-    padding-top: 8px;
-    text-align: center;
-}
-
-.error-text {
-    background: rgba(181, 51, 51, 0.3);
-    color: darkred;
-}
-
-.sucsess-text {
-    background: rgba(113, 183, 131, 0.3);
-    color: #128b4c;
-}
-
-/*  ЦВЕТ ТЕКСТА В PLACEHOLDER  */
-::-webkit-input-placeholder { /* WebKit, Blink, Edge */
-    color: #fdf6e3;
-}
-
-:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
-    color: #fdf6e3;
-    opacity: 1;
-}
-
-::-moz-placeholder { /* Mozilla Firefox 19+ */
-    color: #fdf6e3;
-    opacity: 1;
-}
-
-:-ms-input-placeholder { /* Internet Explorer 10-11 */
-    color: #fdf6e3;
-}
-
-/* РАСПОЛОЖЕНИЕ КОНТАКТНОЙ ИНФОРМАЦИИ */
-.contact-key {
-    min-width: 166px;
-}
-
-.contact-value {
-    min-width: 248px;
-    padding-left: 0px;
-}
-
-.contact {
-    min-width: 500px;
 }
 
 /*  РАСПОЛОЖЕНИЕ ИКОНОК СОЦ СЕТЕЙ */

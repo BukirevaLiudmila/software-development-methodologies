@@ -2,63 +2,86 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link href="/css/bootstrap.min.css" rel="stylesheet">
-    <link href="/css/bootstrap-grid.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,400,500&amp;subset=cyrillic" rel="stylesheet">
-    <link href="/css/style.css" rel="stylesheet">
+    <!-- <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <link href="./css/bootstrap-grid.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,400,500&amp;subset=cyrillic" rel="stylesheet">-->
+    <link href="https://fonts.googleapis.com/css?family=Forum&amp;subset=cyrillic" rel="stylesheet">
+    <link href="./css/style.css" rel="stylesheet">
     <title>Liudmila Bukireva</title>
 </head>
 <body>
 <!--------------------------МЕНЮ-------------------------->
 <div class="scroll-circles">
     <div class="circle">
-        <img src="/images/circle.png" data-scroll-to="screen-greeting" class="row">
+        <img src="./images/circle.png" data-scroll-to="screen-greeting" class="row">
     </div>
     <div class="circle">
-        <img src="/images/circle.png" data-scroll-to="screen-skills" class="row">
+        <img src="./images/circle.png" data-scroll-to="screen-skills" class="row">
     </div>
     <div class="circle">
-        <img src="/images/circle.png" data-scroll-to="screen-education" class="row">
+        <img src="./images/circle.png" data-scroll-to="screen-education" class="row">
     </div>
     <div class="circle">
-        <img src="/images/circle.png" data-scroll-to="screen-portfolio" class="row">
+        <img src="./images/circle.png" data-scroll-to="screen-portfolio" class="row">
     </div>
     <div class="circle">
-        <img src="/images/circle.png" data-scroll-to="screen-why-i" class="row">
+        <img src="./images/circle.png" data-scroll-to="screen-why-i" class="row">
     </div>
     <div class="circle">
-        <img src="/images/circle.png" data-scroll-to="screen-contacts" class="row">
+        <img src="./images/circle.png" data-scroll-to="screen-contacts" class="row">
     </div>
 </div>
-<!-----------------------ПРИВЕТСТВИЕ----------------------->
-<div class="container-fluid screen bg-lilac" id="screen-greeting">
-    <div class="row justify-content-center">
-        <div class="padding-top-lg">
-            <div class="arrow">
-                <div class="hvr-hang"><img src="/images/arrow.png" alt="стрелка"></div>
+<!-----------------------MAIN----------------------->
+<div id="screen-greeting">
+    <div class="main-container">
+        <div>
+            <h1>7 основных методологий разработки</h1>
+            <p>Разработка программного продукта знает много достойных методологий&nbsp;&mdash; иначе говоря, устоявшихся best practices.
+                Выбор зависит от специфики проекта, системы бюджетирования, субъективных предпочтений и даже темперамента руководителя.
+                В статье описаны семь основных методологий разработки
+            </p>
+        </div>
+        <div>
+            <img src="./images/fishes.jpg">
+        </div>
+        <div class="arrow">
+            <div class="hvr-hang">
+                <img src="./images/arrow.png" alt="стрелка">
             </div>
         </div>
     </div>
 </div>
-<!-----------------------НАВЫКИ----------------------->
+<!-----------------------«Waterfall Model» (каскадная модель или «водопад»)----------------------->
 <div class="container-fluid screen bg-silver" id="screen-skills">
     <div class="row justify-content-center">
 
     </div>
 </div>
-<!-----------------------ОБРАЗОВАНИЕ----------------------->
+<!-----------------------«V-Model»----------------------->
 <div class="container-fluid bg-triangles screen color-pearl" id="screen-education">
     <div class="row justify-content-center">
 
     </div>
 </div>
-<!-----------------------ПОРТФОЛИО----------------------->
+<!-----------------------«Incremental Model» (инкрементная модель)----------------------->
 <div class="container-fluid bg-mint color-gray screen" id="screen-portfolio">
     <div class="row justify-content-center">
 
     </div>
 </div>
-<!-----------------------ПОЧЕМУ Я?----------------------->
+<!-----------------------«RAD Model» (rapid application development model или быстрая разработка приложений)----------------------->
+<div class="container-fluid bg-lilac color-pearl screen" id="screen-why-i">
+    <div class="row justify-content-center">
+
+    </div>
+</div>
+<!-----------------------«Iterative Model» (итеративная или итерационная модель)----------------------->
+<div class="container-fluid bg-lilac color-pearl screen" id="screen-why-i">
+    <div class="row justify-content-center">
+
+    </div>
+</div>
+<!-----------------------«Spiral Model» (спиральная модель)----------------------->
 <div class="container-fluid bg-lilac color-pearl screen" id="screen-why-i">
     <div class="row justify-content-center">
 
@@ -72,9 +95,9 @@
     <!-- Соц сети -->
     <div class="row">
         <div class="col-sm-2 offset-sm-2 row icons flex-nowrap">
-            <div class="col-sm-4 icon"><a href="https://vk.com/id18203356" target="_blank"><img src="/images/vk.png" alt="ВКонтакте"></a></div>
-            <div class="col-sm-4 icon"><a href="https://github.com/BukirevaLiudmila" target="_blank"><img src="/images/github.png" alt="GitHub"></a></div>
-            <div class="col-sm-4 icon">	<a href="skype:lysiena-mila?chat"><img src="/images/skype.png" alt="Skype"></a></div>
+            <div class="col-sm-4 icon"><a href="https://vk.com/id18203356" target="_blank"><img src="./images/vk.png" alt="ВКонтакте"></a></div>
+            <div class="col-sm-4 icon"><a href="https://github.com/BukirevaLiudmila" target="_blank"><img src="./images/github.png" alt="GitHub"></a></div>
+            <div class="col-sm-4 icon">	<a href="skype:lysiena-mila?chat"><img src="./images/skype.png" alt="Skype"></a></div>
         </div>
         <div class="col-sm-8"></div>
     </div>
@@ -82,8 +105,8 @@
         <div class="color-gray copyright">© Copyright 2017 Букирёва Людмила</div>
     </div>
 </div>
-<script src="/js/zenscroll-min.js"></script>
-<script src="/js/slidr.min.js"></script>
-<script src="/js/script.js"></script>
+<script src="./js/zenscroll-min.js"></script>
+<script src="./js/slidr.min.js"></script>
+<script src="./js/script.js"></script>
 </body>
 </html>
