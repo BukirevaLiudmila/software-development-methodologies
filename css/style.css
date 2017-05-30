@@ -150,11 +150,11 @@ a:active {
 }
 
 @media (max-width: 390px) {
-    .contacts {
+/*    .contacts {
         font-size: 12px;
-    }
+    }*/
     .contacts-block {
-        width: 230px;
+        width: 280px;
     }
 }
 
