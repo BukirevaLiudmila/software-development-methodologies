@@ -149,7 +149,28 @@ a:active {
     font-size: 12px;
 }
 
+@media (max-width: 390px) {
+    .contacts {
+        font-size: 12px;
+    }
+    .contacts-block {
+        width: 230px;
+    }
+}
+
 @media (max-width: 790px) {
+    .padding-left {
+        padding-left: 0;
+    }
+}
+
+/*
+@media (max-width: 790px) {
+    .row {
+        flex-direction: column;
+        max-width: 700px;
+        align-items: stretch;
+    }
     .padding-left {
         padding-left: 0;
     }
@@ -157,9 +178,23 @@ a:active {
         font-size: 18px;
     }
     .contacts-block {
-        width: 500px;
+        width: 700px;
     }
     .icon {
-        width: 300px;
+        width: 100px;
+        align-self: flex-start;
     }
 }
+*/
+
+/*@media (max-width: 500px) {
+    .contacts {
+        font-size: 12px;
+    }
+    .contacts-block {
+        width: auto;
+    }
+    .icon {
+        width: auto;
+    }
+}*/
