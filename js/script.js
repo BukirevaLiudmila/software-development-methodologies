@@ -26,30 +26,5 @@ function setBackgroindImg() {
     background.setAttribute('style', `background-image: url("${lastImg.getAttribute('src')}");`);
 }
 
-//
 window.onscroll = setBackgroindImg;
 setBackgroindImg();
-
-/*
-var edgeOffset = 0; // px
-zenscroll.setup(null, edgeOffset);
-
-/!* переключение экранов (меню-кружочки) *!/
-function scroll(e) {
-    var to = e.target.getAttribute('data-scroll-to');
-    if (to == null) {      // если нажали на стрелку на первом экране
-        var screen = document.getElementById('screen-skills');
-    } else {
-        var screen = document.getElementById(to);
-    }
-    zenscroll.to(screen);
-}
-
-document.querySelectorAll('.circle').forEach(function (el) {
-    el.addEventListener('click', scroll);
-});
-*/
-
-/* стрелка на первом экране */
-/*var arrow = document.querySelector('.hvr-hang');
-arrow.addEventListener('click', scroll);*/

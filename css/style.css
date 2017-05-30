@@ -78,6 +78,10 @@ img {
     background-color: rgba(255, 255, 255, 0.8);
 }
 
+.card:last-child {
+    margin-bottom: 35px;
+}
+
 .text-block {
     max-width: 700px;
 }
@@ -101,14 +105,25 @@ img {
     flex-wrap: wrap;
 }
 
+.contacts-block {
+    width: 300px;
+}
+
 .contacts-name {
     font-weight: bold;
+    padding-bottom: 0.5em;
+}
+
+.padding-left {
+    padding-left: 20px;
 }
 
 .icon {
-    width: 145px;
+    flex-basis: auto;
     align-self: center;
     text-align: center;
+    padding-bottom: 1em;
+    width: 100px;
 }
 
 div.icon > img {
@@ -132,5 +147,4 @@ a:active {
 /*  COPYRIGHT */
 .copyright {
     font-size: 12px;
-    padding-top: 20px;
 }
