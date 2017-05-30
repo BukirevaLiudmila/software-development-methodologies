@@ -1,14 +1,14 @@
-/*--------------------ОБЩИЕ СТИЛИ--------------------*/
+/*ОБЩИЕ СТИЛИ*/
 * {
     font-family: 'Roboto Mono', monospace;
     margin: 0;
 }
 
 h1, h2 {
-    font-weight: 700;
     font-size: 24px;
-    text-align: center;
+    font-weight: 700;
     padding-bottom: 30px;
+    text-align: center;
 }
 
 h3 {
@@ -20,11 +20,15 @@ p {
     margin-bottom: 1em;
 }
 
+h3 + p {
+    margin-bottom: 0;
+}
+
 img {
     max-width: 100%;
 }
 
-/*--------------------ВЫРАВНИВАНИЕ КОНТЕНТА--------------------*/
+/*РАСПОЛОЖЕНИЕ КОНТЕНТА*/
 .row {
     display: flex;
     flex-direction: row;
@@ -35,43 +39,43 @@ img {
     flex-direction: column;
 }
 
-/*--------------------ФОН--------------------*/
+/*ФОН*/
 .background {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
     background-image: url("../images/fishes.jpg");
     background-size: cover;
+    filter: blur(40px);
     -webkit-filter: blur(40px);
     -moz-filter: blur(40px);
     -o-filter: blur(40px);
     -ms-filter: blur(40px);
-    filter: blur(40px);
+    height: 100%;
+    left: 0;
+    position: fixed;
+    top: 0;
     transition-duration: 300ms;
+    width: 100%;
 }
 
-/*--------------------ГЛАВНЫЙ КОНТЕЙНЕР--------------------*/
+/*ГЛАВНЫЙ КОНТЕЙНЕР*/
 .screen {
-    position: relative;
-    background: transparent;
-    justify-content: center;
     align-items: center;
-    cursor: default;
+    background: transparent;
     color: #424242;
+    cursor: default;
     font-size: 17px;
+    justify-content: center;
+    position: relative;
     z-index: 1;
 }
 
-/*--------------------ИНФОРМАЦИОННАЯ КАРТОЧКА--------------------*/
+/*ИНФОРМАЦИОННАЯ КАРТОЧКА*/
 .card {
-    max-width: 700px;
     background-color: rgba(255, 255, 255, 1);
-    box-shadow: inset 0 -1px 0 0 rgba(0,0,0,0.2), inset 0 0 0 1px rgba(0,0,0,0.15);
-    padding: 35px;
     border-radius: 2px;
+    box-shadow: inset 0 -1px 0 0 rgba(0,0,0,0.2), inset 0 0 0 1px rgba(0,0,0,0.15);
     margin-top: 35px;
+    max-width: 700px;
+    padding: 35px;
 }
 
 .card:first-child {
@@ -95,18 +99,28 @@ img {
     padding: 1em 0 0;
 }
 
+.list + p {
+    margin-bottom: 0;
+}
+
 .ul-margin {
     margin-bottom: 1em;
 }
 
-/*  КОНТАКТЫ */
+/*КОНТАКТЫ*/
 .contacts {
-    font-size: 15px;
     flex-wrap: wrap;
+    font-size: 15px;
 }
 
 .contacts-block {
     width: 300px;
+}
+
+@media (max-width: 390px) {
+    .contacts-block {
+        width: 280px;
+    }
 }
 
 .contacts-name {
@@ -118,11 +132,18 @@ img {
     padding-left: 20px;
 }
 
+@media (max-width: 790px) {
+    .padding-left {
+        padding-left: 0;
+    }
+}
+
+/*ИКОНКА GitHub*/
 .icon {
-    flex-basis: auto;
     align-self: center;
-    text-align: center;
+    flex-basis: auto;
     padding-bottom: 1em;
+    text-align: center;
     width: 100px;
 }
 
@@ -130,7 +151,7 @@ div.icon > img {
     cursor: pointer;
 }
 
-/*  ОФОРМЛЕНИЕ ССЫЛОК */
+/*ОФОРМЛЕНИЕ ССЫЛОК*/
 a:link {
     color: #424242;
     text-decoration: none;
@@ -144,57 +165,7 @@ a:active {
     font-weight: bold;
 }
 
-/*  COPYRIGHT */
+/*COPYRIGHT*/
 .copyright {
     font-size: 12px;
 }
-
-@media (max-width: 390px) {
-/*    .contacts {
-        font-size: 12px;
-    }*/
-    .contacts-block {
-        width: 280px;
-    }
-}
-
-@media (max-width: 790px) {
-    .padding-left {
-        padding-left: 0;
-    }
-}
-
-/*
-@media (max-width: 790px) {
-    .row {
-        flex-direction: column;
-        max-width: 700px;
-        align-items: stretch;
-    }
-    .padding-left {
-        padding-left: 0;
-    }
-    .contacts {
-        font-size: 18px;
-    }
-    .contacts-block {
-        width: 700px;
-    }
-    .icon {
-        width: 100px;
-        align-self: flex-start;
-    }
-}
-*/
-
-/*@media (max-width: 500px) {
-    .contacts {
-        font-size: 12px;
-    }
-    .contacts-block {
-        width: auto;
-    }
-    .icon {
-        width: auto;
-    }
-}*/
