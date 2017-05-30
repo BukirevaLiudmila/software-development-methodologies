@@ -41,13 +41,14 @@ img {
 
 /*ФОН*/
 .background {
-    background-image: url("../images/fishes.jpg");
+/*    background-image: url("../images/fishes.jpg");
     background-size: cover;
     filter: blur(40px);
     -webkit-filter: blur(40px);
     -moz-filter: blur(40px);
     -o-filter: blur(40px);
-    -ms-filter: blur(40px);
+    -ms-filter: blur(40px);*/
+    background-color: #fdf6e3;
     height: 100%;
     left: 0;
     position: fixed;
