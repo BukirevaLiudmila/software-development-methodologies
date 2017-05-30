@@ -148,3 +148,18 @@ a:active {
 .copyright {
     font-size: 12px;
 }
+
+@media (max-width: 790px) {
+    .padding-left {
+        padding-left: 0;
+    }
+    .contacts {
+        font-size: 18px;
+    }
+    .contacts-block {
+        width: 500px;
+    }
+    .icon {
+        width: 300px;
+    }
+}
