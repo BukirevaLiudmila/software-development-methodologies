@@ -148,7 +148,7 @@ img {
     width: 100px;
 }
 
-div.icon > img {
+.icon > img {
     cursor: pointer;
 }
 
