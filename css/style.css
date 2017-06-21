@@ -143,9 +143,14 @@ img {
 .icon {
     align-self: center;
     flex-basis: auto;
-    padding-bottom: 1em;
     text-align: center;
     width: 100px;
+}
+
+@media screen and (max-width: 790px) {
+    .icon {
+        padding-bottom: 1em;
+    }
 }
 
 .icon > img {
